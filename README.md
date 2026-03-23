@@ -41,8 +41,6 @@ Concevoir une application web permettant de :
 
 ## 4. Pipeline de traitement
 
-Le processus de traitement suit les étapes suivantes :
-
 1. Chargement de l’image  
 2. Conversion en niveaux de gris  
 3. Application d’un filtre de débruitage  
@@ -52,10 +50,7 @@ Le processus de traitement suit les étapes suivantes :
 
 ---
 
-
----
-
-## 6. Technologies utilisées
+## 5. Technologies utilisées
 
 - **Python** : langage principal  
 - **OpenCV** : traitement d’image  
@@ -65,71 +60,9 @@ Le processus de traitement suit les étapes suivantes :
 
 ---
 
-## 7. Installation
-
-Cloner le dépôt :
+## 6. Installation
 
 ```bash
 git clone https://github.com/angedesire-boua/image-restoration-app.git
 cd image-restoration-app
-
----
-
-## 9. Résultats
-
-L’application permet :
-
-- Une réduction visible du bruit
-- Une amélioration de la netteté
-- Une meilleure lisibilité des images
-- Une comparaison directe entre image originale et image traitée
-
----
-
-## 10. Cas d’usage
-- Santé : amélioration d’images médicales (radiographie, IRM)
-- Sécurité : clarification d’images de vidéosurveillance
-- Archivage : restauration de documents anciens
-- Usage quotidien : amélioration de photos prises avec des appareils de faible qualité
-
----
-
-## 11. Limites
-Traitement uniquement en niveaux de gris
-Paramètres des filtres non ajustables
-Méthodes classiques (pas d’apprentissage profond)
-Résultats limités sur des images fortement dégradées
-
----
-
-## 12. Perspectives d’amélioration
-Intégration de modèles de Deep Learning (GAN, Autoencoders)
-Support du traitement en couleur
-Ajout de paramètres ajustables (intensité des filtres)
-Détection automatique des zones dégradées
-Déploiement en ligne (cloud)
-Traitement par lot
-
----
-
-##13. Rapport
-
-Le rapport complet du projet est disponible dans :
-
-docs/report.pdf
-
----
-
-##14. Auteur
-
-Ange Désiré Boua
-Master Big Data & Intelligence Artificielle
-Institut Universitaire d’Abidjan (IUA)
-
----
-
-##15. Positionnement
-
-Ce projet constitue une implémentation complète d’un pipeline de traitement d’image, allant de l’acquisition à la restitution, avec une approche orientée application.
-
-Il sert de base pour évoluer vers des systèmes plus avancés en vision par ordinateur et en intelligence artificielle.
+pip install -r requirements.txt
