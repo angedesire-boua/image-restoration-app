@@ -1,68 +1,57 @@
-# Image Restoration App
+# 🖼️ Image Restoration App
 
-Application de restauration d’images basée sur des techniques de traitement d’image numérique, développée avec Python, OpenCV et Streamlit.
-
----
-
-## 1. Contexte
-
-Dans de nombreux domaines (santé, sécurité, archivage, médias), la qualité des images est essentielle pour l’analyse et la prise de décision. Pourtant, les images sont souvent dégradées (flou, bruit, faible contraste) en raison de conditions de capture imparfaites.
-
-Ce projet propose une solution simple et interactive permettant d’améliorer la lisibilité d’images dégradées à l’aide de techniques classiques de vision par ordinateur.
+Application web interactive de restauration d’images développée avec **Python**, **OpenCV** et **Streamlit**.  
+Ce projet permet d’améliorer la qualité visuelle d’images dégradées grâce à plusieurs techniques classiques de traitement d’image.
 
 ---
 
-## 2. Objectif
+## 📌 Aperçu du projet
 
-Concevoir une application web permettant de :
+Dans de nombreux domaines comme la **santé**, la **sécurité**, l’**archivage** ou les **médias**, la qualité d’une image est essentielle pour l’analyse et la prise de décision.  
+Cependant, les images sont souvent altérées par du **bruit**, du **flou** ou une **faible netteté**.
 
-- Restaurer des images floues ou bruitées  
-- Appliquer des filtres de traitement d’image  
-- Visualiser les résultats en temps réel  
-- Comparer les images avant et après traitement  
-- Télécharger l’image restaurée  
+Cette application propose une solution simple, interactive et intuitive pour :
 
----
-
-## 3. Fonctionnalités
-
-- Upload d’image (JPG, PNG)  
-- Conversion en niveaux de gris  
-- Réduction du bruit :
-  - Filtre Gaussien  
-  - Filtre Médian  
-  - Filtre Bilatéral  
-- Amélioration de la netteté :
-  - Filtre Laplacien  
-- Affichage comparatif (avant / après)  
-- Export de l’image restaurée  
+- restaurer des images dégradées,
+- comparer le rendu avant/après,
+- tester plusieurs filtres de traitement,
+- exporter l’image restaurée.
 
 ---
 
-## 4. Pipeline de traitement
+## 🚀 Fonctionnalités
 
-1. Chargement de l’image  
-2. Conversion en niveaux de gris  
-3. Application d’un filtre de débruitage  
-4. Amélioration de la netteté (accentuation des contours)  
-5. Affichage du résultat  
-6. Téléchargement de l’image finale  
-
----
-
-## 5. Technologies utilisées
-
-- **Python** : langage principal  
-- **OpenCV** : traitement d’image  
-- **Streamlit** : interface web interactive  
-- **NumPy** : calcul numérique  
-- **Pillow (PIL)** : manipulation d’images  
+- 📤 Upload d’image (**JPG / PNG**)
+- 🎨 Conversion en **niveaux de gris**
+- 🧼 Réduction du bruit avec :
+  - **Filtre Gaussien**
+  - **Filtre Médian**
+  - **Filtre Bilatéral**
+- ✨ Amélioration de la netteté avec :
+  - **Filtre Laplacien**
+- 🔍 Comparaison **Avant / Après**
+- 💾 Téléchargement de l’image restaurée
+- 🌐 Interface web interactive avec **Streamlit**
 
 ---
 
-## 6. Installation
+## 🛠️ Technologies utilisées
+
+- **Python**
+- **OpenCV**
+- **NumPy**
+- **Pillow**
+- **Streamlit**
+
+---
+
+## 📂 Structure du projet
 
 ```bash
-git clone https://github.com/angedesire-boua/image-restoration-app.git
-cd image-restoration-app
-pip install -r requirements.txt
+image-restoration-app/
+│
+├── app/                  # Code principal de l'application
+├── docs/                 # Documentation ou rapport du projet
+├── images/               # Images du projet / captures / exemples
+├── README.md             # Documentation principale
+└── requirements.txt      # Dépendances Python
